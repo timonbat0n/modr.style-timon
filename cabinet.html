@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MODR | Панель Управления</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="spa-body">
+
+   <main class="container spa-content">
+    
+    <section id="view-profile" class="view active centered-view">
+        <div class="profile-card premium-glass">
+            <div class="user-info-vertical">
+                <div class="avatar-large neon-border">👤</div>
+                <div class="user-details-centered">
+                    <h2>Пользователь</h2>
+                    <p class="reg-date">ID: <span style="color:var(--accent);">MODR-9812</span></p>
+                </div>
+            </div>
+            <div class="status-badge-neon">VIP ПОДПИСКА</div>
+            <div class="auth-code-box neon-box">
+                <span>Ваш временный код</span>
+                <code class="code-display">CBEC9BD77026D5A9</code>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link logout">Выйти</a>
+            </div>
+        </div>
+
+        <a href="https://t.me/getmodr" class="tg-widget-premium neon-hover" target="_blank">
+            <div class="tg-header">
+                <img src="tgphoto.jpg" alt="TG" class="tg-avatar round-avatar">
+                <div class="tg-meta">
+                    <span class="tg-name">MODR Club</span>
+                    <span class="tg-subscribers">Техподдержка и новости</span>
+                </div>
+            </div>
+            <span class="btn-tg-shiny">Подписаться</span>
+        </a>
+
+        <div class="faq-container-premium">
+    <h3 class="faq-title">Частые вопросы</h3>
+
+    <details class="faq-card">
+        <summary>Что за подписка? Зачем она мне?</summary>
+        <div class="faq-body">
+            <p>Подписка — это месячный доступ к нашим сервисам за <b>69 рублей</b> (меньше 20 алмазов в магазине). Эти средства идут на поддержку мода и работу саппорта.</p>
+            <p>Взамен вы целый месяц играете без рекламы и ожидания, не тратя время на фарм валюты.</p>
+        </div>
+    </details>
+
+    <details class="faq-card">
+        <summary>Как войти в игру и восстановить прогресс?</summary>
+        <div class="faq-body">
+            <ol class="faq-list">
+                <li>Запустите приложение <b>modr.</b></li>
+                <li>Раздел <b>Настройки</b> » Инструменты » <b>Быстрый вход</b>.</li>
+                <li>Вставьте код: <code class="mini-code">CBEC9BD77026D5A9</code></li>
+            </ol>
+            <p>Для переноса из оригинала или файла используйте инструменты «Перенос из оригинала» или «Альтернативный перенос» в меню игры.</p>
+        </div>
+    </details>
+
+    <details class="faq-card">
+        <summary>Оплата через VK Donut</summary>
+        <div class="faq-body">
+            <p>Можно активировать <a href="#" class="faq-link">по этой ссылке</a>. Продление автоматическое, отмена в настройках VK.</p>
+            <p class="warning-text">⚠️ Работает только при входе через ВКонтакте!</p>
+        </div>
+    </details>
+
+    <details class="faq-card">
+        <summary>Не устанавливается [.apk] файл</summary>
+        <div class="faq-body">
+            <ul class="faq-list">
+                <li>Убедитесь, что свободно >1 ГБ места.</li>
+                <li>Дайте разрешение на установку из неизвестных источников.</li>
+                <li>Удалите старую версию мода (предварительно нажав "Выход" в меню для сохранения прогресса).</li>
+                <li>Перезагрузите устройство.</li>
+            </ul>
+        </div>
+    </details>
+
+    <details class="faq-card">
+        <summary>Проблемы с оплатой или балансом</summary>
+        <div class="faq-body">
+            <p>Средства могут идти до 1 часа. Если не пришли — пишите в поддержку, приложив квитанцию с почты.</p>
+            <div class="support-links">
+                <a href="https://vk.me/modr.club" class="sup-btn vk">VK Support</a>
+                <a href="https://t.me/modrSupportBot" class="sup-btn tg">TG Support</a>
+            </div>
+        </div>
+    </details>
+
+    <details class="faq-card">
+        <summary>Редактирование статов</summary>
+        <div class="faq-body">
+            <p>Редактор доступен в разделе <b>"Инструменты"</b>.</p>
+        </div>
+    </details>
+</div>
+    </section>
+
+    <section id="view-editor" class="view centered-view">
+        <h2 class="page-title-gradient">Инструменты</h2>
+        <div class="placeholder-box-neon">
+            🛠 Модуль инструментов в разработке. Ожидайте в следующем обновлении.
+        </div>
+    </section>
+
+    <section id="view-instructions" class="view centered-view">
+        <h2 class="page-title-gradient">Установка Мода</h2>
+        
+        <div class="platform-tabs-modern modern-glass">
+            <button class="tab-btn-modern active" onclick="showPlatform('ios', this)">🍎 iOS</button>
+            <button class="tab-btn-modern" onclick="showPlatform('android', this)">🤖 Android</button>
+            <button class="tab-btn-modern" onclick="showPlatform('pc', this)">💻 PC</button>
+        </div>
+
+        <div class="instruction-display" style="width: 100%;">
+            
+            <div id="inst-ios" class="platform-view active">
+                <div class="download-banner ios-blur neon-shadow-ios">
+                    <span class="banner-title">Файл приложения</span>
+                    <p>Понадобится неподписанный <b>[.ipa]</b> файл.</p>
+                    <a href="#" class="btn-download ios-btn">Скачать .IPA</a>
+                </div>
+                
+                <div class="steps-grid">
+                    <div class="styled-step ios-step">
+                        <span class="step-icon">📦</span>
+                        <div class="step-text">
+                            <h4>Выбор метода</h4>
+                            <p>Установите файл через ПК (AltStore, Sideloadly) или без ПК (Платные сертификаты Scarlet, Esign).</p>
+                        </div>
+                    </div>
+
+                    <div class="styled-step ios-step">
+                        <span class="step-icon">⚙️</span>
+                        <div class="step-text">
+                            <h4>Вход в меню</h4>
+                            <p>Запустите игру » <b>Настройки</b> » Инструменты » <b>Быстрый вход</b>.</p>
+                        </div>
+                    </div>
+
+                    <div class="code-step ios-step">
+                        <span class="step-icon">🔑</span>
+                        <div class="step-text">
+                            <h4>Восстановление</h4>
+                            <p>Вставьте ваш код и дождитесь перезагрузки.</p>
+                            <code class="neon-code ios-code">CBEC9BD77026D5A9</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="warning-box premium-glass neon-border-red">
+                    <span class="warning-icon">⚠️ ВНИМАНИЕ</span>
+                    <p>Никогда не входите в чужой Apple ID для установки — это мошенничество, ведущее к блокировке устройства!</p>
+                </div>
+            </div>
+
+            <div id="inst-android" class="platform-view">
+                <div class="download-banner android-blur neon-shadow-android">
+                    <span class="banner-title">APK Мод</span>
+                    <p>Скачайте последнюю версию для Android.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn-download android-btn">Скачать (Main)</a>
+                        <a href="#" class="btn-download android-btn dim">Старые устройства</a>
+                    </div>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="styled-step android-step">
+                        <span class="step-icon">⬇️</span>
+                        <div class="step-text">
+                            <h4>Установка</h4>
+                            <p>Откройте файл и подтвердите установку. Разрешите установку из неизвестных источников.</p>
+                        </div>
+                    </div>
+
+                    <div class="styled-step android-step">
+                        <span class="step-icon">⚙️</span>
+                        <div class="step-text">
+                            <h4>Авторизация</h4>
+                            <p>Запустите игру » <b>Настройки</b> » Инструменты » <b>Быстрый вход</b>.</p>
+                        </div>
+                    </div>
+
+                    <div class="code-step android-step">
+                        <span class="step-icon">🔑</span>
+                        <div class="step-text">
+                            <h4>Восстановление</h4>
+                            <p>Вставьте ваш код и дождитесь перезагрузки.</p>
+                            <code class="neon-code android-code">CBEC9BD77026D5A9</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="inst-pc" class="platform-view">
+                <div class="download-banner pc-blur neon-shadow-pc">
+                    <span class="banner-title">Сборка для Windows</span>
+                    <p>Мартовское обновление в архиве.</p>
+                    <a href="#" class="btn-download pc-btn">Скачать .ZIP архив</a>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="styled-step pc-step">
+                        <span class="step-icon">📂</span>
+                        <div class="step-text">
+                            <h4>Распаковка</h4>
+                            <p><b>Обязательно</b> распакуйте загруженный архив в любую папку на компьютере.</p>
+                        </div>
+                    </div>
+
+                    <div class="styled-step pc-step">
+                        <span class="step-icon">⚙️</span>
+                        <div class="step-text">
+                            <h4>Вход</h4>
+                            <p>Запустите modr.exe » <b>Настройки</b> » Инструменты » <b>Быстрый вход</b>.</p>
+                        </div>
+                    </div>
+
+                    <div class="code-step pc-step">
+                        <span class="step-icon">🔑</span>
+                        <div class="step-text">
+                            <h4>Восстановление</h4>
+                            <p>Вставьте ваш код и дождитесь перезагрузки.</p>
+                            <code class="neon-code pc-code">CBEC9BD77026D5A9</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<nav class="bottom-nav modern-glass">
+    <button class="nav-btn active" onclick="switchView('view-profile', this)">
+        <span class="nav-icon">👤</span>
+        <span class="nav-label">Кабинет</span>
+    </button>
+    <button class="nav-btn" onclick="switchView('view-editor', this)">
+        <span class="nav-icon">🛠</span>
+        <span class="nav-label">Инструменты</span>
+    </button>
+    <button class="nav-btn" onclick="switchView('view-instructions', this)">
+        <span class="nav-icon">📚</span>
+        <span class="nav-label">Установка</span>
+    </button>
+</nav>
+
+<script>
+    function switchView(viewId, btn) {
+        document.querySelectorAll('.view').forEach(v => {
+            v.style.display = 'none';
+            v.classList.remove('active');
+        });
+        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+        
+        const target = document.getElementById(viewId);
+        if(target) {
+            target.style.display = 'flex';
+            target.classList.add('active');
+        }
+        btn.classList.add('active');
+        window.scrollTo(0,0);
+    }
+
+    function showPlatform(platformId, btn) {
+        document.querySelectorAll('.platform-view').forEach(v => {
+            v.style.display = 'none';
+            v.classList.remove('active');
+        });
+        document.querySelectorAll('.tab-btn-modern').forEach(b => b.classList.remove('active'));
+        
+        const plat = document.getElementById('inst-' + platformId);
+        if(plat) {
+            plat.style.display = 'block';
+            plat.classList.add('active');
+        }
+        btn.classList.add('active');
+    }
+</script>
+</body>
+</html>
